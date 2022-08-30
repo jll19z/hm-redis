@@ -28,7 +28,7 @@ public class LoginInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        System.out.println("login");
+        //System.out.println("login");
         //基于token来获取user
         if (UserHolder.getUser() == null) {
             response.setStatus(401);
